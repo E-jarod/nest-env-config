@@ -11,11 +11,41 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
+    "strict": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true
-  }
+    "noFallthroughCasesInSwitch": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "exactOptionalPropertyTypes": true,
+    "importsNotUsedAsValues": "remove",
+    "useUnknownInCatchVariables": true,
+    "noImplicitThis": true,
+    "pretty": true,
+    "noStrictGenericChecks": false,
+    // says if a code will never execute
+    "allowUnreachableCode": false,
+    // https://www.typescriptlang.org/tsconfig#allowUnusedLabels
+    "allowUnusedLabels": false,
+    // https://www.typescriptlang.org/tsconfig#noImplicitReturns
+    "noImplicitReturns": true,
+    // https://www.typescriptlang.org/tsconfig#noPropertyAccessFromIndexSignature
+    // "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "resolveJsonModule": true,
+    "noErrorTruncation": true,
+    "paths": {
+      "@configs/*": ["src/configs/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  // "ts-node": {
+  //   "require": ["tsconfig-paths/register"]
+  // },
+  "exclude": ["node_modules", "dist"]
 }
